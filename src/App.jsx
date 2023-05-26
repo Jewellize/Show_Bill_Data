@@ -59,7 +59,7 @@ function App() {
   // console.log(menuItems);
   return (
     <div className="grid gap-4">
-      <div id="title-header" className="text-xl">
+      <div id="title-header" className="text-6xl">
         Kitchen Menu
       </div>
       <div id="tab-filter" className="flex justify-center gap-2">
