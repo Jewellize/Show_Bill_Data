@@ -29,9 +29,7 @@ function App() {
 
   const fetchMenuItems = async () => {
     try {
-      const res = await axios.get(
-        "https://temi-food-backend.vercel.app/showorder"
-      );
+      const res = await axios.get("http://localhost:3000/showorder");
       setMenuItems(res.data);
     } catch (error) {
       console.log("Error fetching menu items:", error);
