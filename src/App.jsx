@@ -59,7 +59,9 @@ function App() {
   // console.log(menuItems);
   return (
     <div className="grid gap-4">
-      <div id="title-header text-3xl">Kitchen Menu</div>
+      <div id="title-header" className="text-xl">
+        Kitchen Menu
+      </div>
       <div id="tab-filter" className="flex justify-center gap-2">
         <div className="flex items-center bg-blue-200 py-2 px-4 rounded-full ">
           ออเดอร์ทั้งหมด
@@ -87,15 +89,8 @@ function App() {
           <div id="card-header" className="flex justify-between p-2">
             <div className="flex gap-8 items-center">
               <div>โต๊ะ : {menu.numoftable}</div>
-              <div>
-                วันที่ : {menu.ordertime ? menu.ordertime.split("T")[0] : ""}
-              </div>
-              <div>
-                เวลา :{" "}
-                {menu.ordertime
-                  ? menu.ordertime.split("T")[1].split(".")[0]
-                  : ""}
-              </div>
+              <div>วันที่ : {menu.ordertime ? menu.ordertime : ""}</div>
+              <div>เวลา : {menu.ordertime ? menu.ordertime : ""}</div>
             </div>
             {/* check status */}
             {menu.cookstatus === 1 ? (
