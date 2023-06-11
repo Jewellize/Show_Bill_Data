@@ -56,7 +56,7 @@ function App() {
     updateCookStatus(id, updateValue);
   };
 
-  // console.log(menuItems);
+  console.log(menuItems);
   return (
     <div className="grid gap-4">
       <div id="title-header" className="text-6xl">
@@ -88,7 +88,7 @@ function App() {
         <div id="menu-card" key={index} className="border rounded-xl">
           <div id="card-header" className="flex justify-between p-2">
             <div className="flex gap-8 items-center">
-              <div>โต๊ะ : {menu.numoftable}</div>
+              <div>{menu.numoftable}</div>
               <div>วันที่ : {menu.ordertime ? menu.ordertime : ""}</div>
               <div>เวลา : {menu.ordertime ? menu.ordertime : ""}</div>
             </div>
